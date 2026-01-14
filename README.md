@@ -38,6 +38,20 @@ Dataset from [Governance Archaeology - Communities](https://airtable.com/appLmSa
 #### New data:
 - Download `Communities-Grid-view.csv`, `Institutions-Grid-view.csv` from Airtable, move into `data/` folder
 - Update DATA_VERSION as needed 
+- If needed, create a `{DATA_VERSION}_fig` folder with subfolders:
+```zsh
+# Replace {DATA_VERSION} e.g. DATA_VERSION=v5
+export DATA_VERSION={DATA_VERSION}
+```
+```zsh
+mkdir $DATA_VERSION"-fig"
+mkdir $DATA_VERSION"-fig/fig-correlations/"
+mkdir $DATA_VERSION"-fig/fig-correlations-no-eu/"
+mkdir $DATA_VERSION"-fig/fig-communities"
+mkdir $DATA_VERSION"-fig/fig-cgis/"
+mkdir $DATA_VERSION"-fig/fig-cgis-no-eu/"
+mkdir "csv/"$DATA_VERSION
+```
 
 #### Development
 - Activate virtual environment
