@@ -24,7 +24,7 @@ Dataset from [Governance Archaeology - Communities](https://airtable.com/appLmSa
   pip install jupyter ipykernel;
   pip install -r requirements.txt
   ```
-  Optional: Install kernel
+- Install kernel
   ```zsh
   python -m ipykernel install --user \
     --name governance-archaeology \
@@ -32,7 +32,7 @@ Dataset from [Governance Archaeology - Communities](https://airtable.com/appLmSa
   ```
 - Launch notebook:
   ```zsh
-  jupyter lab
+  jupyter notebook
   ```
   
 #### New data:
@@ -43,5 +43,6 @@ Dataset from [Governance Archaeology - Communities](https://airtable.com/appLmSa
 - Activate virtual environment
   ```zsh
   source .venv/bin/activate;
-  jupyter lab
+  jupyter notebook
   ```
+- Check that the "Governance Archaeology" kernel is selected
